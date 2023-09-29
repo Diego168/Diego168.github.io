@@ -1,12 +1,20 @@
 body{
-    background-color: rgb(48, 190, 136);
+    background-image: url(Imagenes/Fondo.jpg);
+    background-position:cover;
+    background-size: cover;
+    background-attachment:fixed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .content-wrapper{
     padding: 10px 30px;
 }
 header{
-    background-color: rgb(212, 37, 25);
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(212, 25, 115);
 
 }
 p{
@@ -17,11 +25,16 @@ h1{
 }
 .highlight{
     font-weight: 700;
-    color: rgb(57, 81, 185);
+    color: rgb(85, 88, 52);
 }
 h1, h2{
     font-weight: 400;
 }
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
 h4{
     text-align: right;
     font-family:"Lucida Console", Monaco, monospace ;
@@ -32,4 +45,71 @@ ul li{
     list-style-type: square;
     margin-bottom: 10px;
     margin-left: 50px;
+}
+.contenedor {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+.imagen1{
+    width: 500px;
+}
+a {
+    justify-content: space-between;
+     font-family: Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   color: black; 
+}
+nav a{
+    font-weight: 600;
+    padding-right: 50px;
+}
+nav a:hover{
+    color: white;
+}
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo-img{
+    height: 100px;
+    margin-right: 10px;
+}
+
+.item{
+    scroll-margin-top: 8ex;
+}
+
+.pre {
+    tab-size:8;
+  }
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: xx-large;
+
+}
+p a{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-size: xx-large;
+}
+article{
+    color: white;
+}
+
+footer{
+    color: white;
+
 }
