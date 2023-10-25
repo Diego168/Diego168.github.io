@@ -1,0 +1,49 @@
+body {
+font-family: Arial, sans-serif;
+ margin: 0;
+padding: 0;
+background-color: #8fdc57;
+text-align: center; /* Centrar elementos en la página */
+
+}
+div {
+background-color: lightgrey;
+width: 1600px;
+border: 15px solid green;
+padding: 5  0px;
+
+margin: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100 auto; /* Centrar el contenedor en la página */
+    padding: 50px;
+    background-color: rgb(232, 163, 60);
+
+}
+
+.container1 {
+    max-width: 800px;
+    margin: 100 auto; /* Centrar el contenedor en la página */
+    padding: 50px;
+    background-color: rgb(171, 115, 216);
+
+}
+.centrado{
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+.espacio{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.derecha{
+    margin-right: 50px;
+}
+
+h1 {
+    color: #0073e6;
+}

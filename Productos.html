@@ -1,0 +1,147 @@
+<html>
+<head>
+    <link rel="stylesheet" href="estilosP.css">
+
+    <title>Productos</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #37bc77;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .espacio{
+            display: flex;
+            margin-top: 50px;
+        }   
+ #borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PRODUCTOS</h1>
+    </header>
+    <div>
+        <p> Contamos con los siguientes productos.</p>        
+    </div>
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/AccesPointCisco.PNG" alt="">
+                    </div>
+                    <p class="descripcion">AccesPoint Catalyst 9100</p>
+                    <span class="precio">$ 120</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/RouterCisco.PNG" alt="">
+                    </div>
+                    <p class="descripcion" id>Cisco Router series 8300 </p>
+                    <span class="precio">$ 150</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/SwitchCisco.PNG" alt="">
+                    </div>
+                    <p class="descripcion">Cisco Switch series 9300</p>
+                    <span class="precio">$ 140</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/ISR.PNG" alt="">
+                    </div>
+                    <p class="descripcion">Integrated Services Routers (ISRs)</p>
+                    <span class="precio">$ 200</span>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Catalyst.png" alt="">
+                    </div>
+                    <p class="descripcion">Catalyst IW9167</p>
+                    <span class="precio">$ 130</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/CiscoFirewall.jpg" alt="">
+                    </div>
+                    <p class="descripcion">Cisco Firepower SM-40</p>
+                    <span class="precio">$ 250</span>
+                </div>
+
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/ConvergenseSystem.PNG" alt="">
+                    </div>
+                    <p class="descripcion">Network Convergence System 4000 Series</p>
+                    <span class="precio">$ 220</span>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="img/Densewavedivision.PNG" alt="">
+                    </div>
+                    <p class="descripcion">Dense Wave Division Multiplexing</p>
+                    <span class="precio">$ 180</span>
+                </div>      
+            </div> 
+        </div>
+
+
+        <!-- CONTENEDOR DE lO SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="AccesPointCisco.PNG" alt="" id="img">
+                <h2 id="modelo">producto 1</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 130</span>
+
+                <div class="fila">
+                    <div class="meses">
+                        <label for="">Meses</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">3</option>
+                            <option value="">6</option>
+                            <option value="">12</option>
+                        </select>
+                    </div>
+                    <button>AGREGAR AL CARRITO</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <nav>
+        <a href="Index.html"><img src="img/Inicio.png" width="50"> </a>
+    </nav>
+
+
+<script src="scriptP.js"></script>
+ 
+</body>
+
+</html>

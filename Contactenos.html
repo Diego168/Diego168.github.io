@@ -1,0 +1,102 @@
+<html>
+<head>
+    <title>Contactenos</title>
+    <style>
+        body {  
+        font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0; 
+            background-color: #e16a4a;
+        }
+        header {
+            background-color: #3dafc1;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #a3a121;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button[type="submit"],
+        button[type="reset"] {
+            padding: 10px 20px;
+            background-color: #be3333;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button[type="submit"]:hover,
+        button[type="reset"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CONTACTENOS</h1>
+    </header>
+    <div class="container">
+        <form action="#" method="post">
+            <label>Nombres:</label>
+            <input type="text" name="nombres" required>
+
+            <label>Apellidos:</label>
+            <input type="text"  name="apellidos" required>
+
+            <label>Número de DNI:</label>
+            <input type="text" name="dni" required>
+
+            <label>Correo Electrónico:</label>
+            <input type="email" name="email" required>
+
+            <label for="telefono">Número de Celular:</label>
+            <input type="tel" name="telefono" required>
+
+            <label>Estado Civil:</label>
+            <select name="estadoCivil">
+                <option> Soltero/a</option>
+                <option>Casado/a</option>
+                <option>Divorciado/a</option>
+                <option>Viudo/a</option>
+            </select>
+
+
+            <label>Tipo de Mensaje:</label>
+                <input type="radio" name="Mensaje"> Consulta<br>
+                <input type="radio" name="Solicitud"> Solicitud<br>
+                <input type="radio" name="Reclamo" > Reclamo<br>
+
+            <label>Asunto:</label>
+            <input type="text" name="asunto" required>
+
+            <label>Cuerpo de Mensaje:</label>
+            <textarea name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+        </form>
+    </div>
+    <nav>
+        <a href="Index.html"><img src="img/Inicio.png" width="50"> </a>
+    </nav>
+</body>
+</html>
